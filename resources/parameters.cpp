@@ -1,6 +1,6 @@
 float delta_t = .1f;
 
-static int number_of_ants = 20;
+static int number_of_ants = 200;
 
 float sensing_area_radius = 20.;
 
