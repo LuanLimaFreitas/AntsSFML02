@@ -115,11 +115,11 @@ public:
     {
         // Create an ant
         float ballRadius = zoom_multiplier*10.f;
-        body.setRadius(ballRadius - 0);
+        body.setRadius(ballRadius - 0); // Por que o '-0'? @Luan
         body.setOutlineThickness(0);
         body.setOutlineColor(sf::Color::Black);
         body.setFillColor(sf::Color(200,55,55));
-        body.setOrigin(ballRadius / 2.  , ballRadius / 2.);
+        body.setOrigin(ballRadius / 2.  , ballRadius / 2.);  // Por que disso? @Luan
 
         float testballRadius = zoom_multiplier*30.f;
         testbody.setRadius(testballRadius - 0);
