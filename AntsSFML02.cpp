@@ -335,7 +335,7 @@ int main()
 
     
     // Create the Ants
-    std::vector<OneAnt*> all_the_ants;
+    std::vector<OneAnt*> all_the_ants;  // Por que vetor de ponteiros? @Luan
     for (int i = 0; i<=number_of_ants; i++) {
         all_the_ants.push_back(new OneAnt());
     }
