@@ -448,7 +448,7 @@ int main()
                 float rightnow = clock.getElapsedTime().asSeconds();
                 for (int ii=0; ii<Droplet::CountDroplets(); ii++)
                 {
-                    Droplet& dd = all_droplets[ii];
+                    Droplet& dd = all_droplets[ii];  //Por que isso é necessário? @Luan
                     float dx = dd.pos.x - mouse_x;
                     float dy = dd.pos.y - mouse_y;
                     float dist2 = (dx*dx + dy*dy);
