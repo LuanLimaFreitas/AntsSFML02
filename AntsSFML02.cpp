@@ -45,8 +45,8 @@ public:
         body.setOutlineThickness(0);
         body.setOutlineColor(sf::Color::Black);
         body.setFillColor(sf::Color::White);
-        body.setOrigin(ballRadius / 2, ballRadius / 2); // Por que disso?
-        body.setPosition(x,y);  // Não seria 'x - ballRadius/2', 'y - ballRadius/2'?
+        body.setOrigin(ballRadius / 2, ballRadius / 2);  // Por que disso? @Luan
+        body.setPosition(x,y);  // Não seria 'x - ballRadius/2', 'y - ballRadius/2'? @Luan
         //        std::cout << number_of_droplets << "\n";
         
     }
