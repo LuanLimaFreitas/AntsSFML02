@@ -412,7 +412,7 @@ int main()
                 {
                     // (re)start the simulation
                     isPaused = false;
-                    re_start_time = clock.getElapsedTime();
+                    re_start_time = clock.getElapsedTime();  // Unused variable. @Luan
                     I_have_been_paused_this_time += pause_clock.getElapsedTime();
                     
 //                    clock.restart();
@@ -420,7 +420,7 @@ int main()
                 else
                 {
                     isPaused = true;
-                    last_pause_time = pause_clock.getElapsedTime();
+                    last_pause_time = pause_clock.getElapsedTime();  // Unused variable. @Luan
                     pause_clock.restart();
                     window.draw(pauseMessage);
                 }
