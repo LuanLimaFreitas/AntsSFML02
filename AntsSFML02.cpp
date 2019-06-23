@@ -296,7 +296,7 @@ void OneAnt::Boundarify()
     if (BoundaryMethod == "reflective")
     {
         float newposx = std::max(x_1,std::min(x_2,pos.x));
-        if (newposx >= x_2 || newposx <= x_1)
+        if (newposx >= x_2 || newposx <= x_1)  // if (newposx == x_1 || newposy == x_2)... @Luan
         {
             vel.x = -vel.x;
         }
@@ -497,8 +497,8 @@ int main()
                 // Drop pheromone
                 if (I_will_drop)
                 {
-                    float current_time = exec_time.asSeconds();
-                    for (int ii=0; ii<Droplet::CountDroplets(); ii++)
+                    float current_time = exec_time.asSeconds();  // currrent_time != rightnow ? @Luan
+                    for (int ii=0; ii<Droplet::CountDroplets(); ii++)  // Lugar estranho para isto. @Luan
                     {
                         // Erase some droplets
 //                        float elt = rightnow-all_droplets[ii].origin_time;//not used
